@@ -6,7 +6,6 @@ const UserProfile = ({ userData }) => {
     <div className="user-profile">
       <h2>{name}</h2>
       <p>{email}</p>
-      {/* Add more user profile information as needed */}
     </div>
   );
 };

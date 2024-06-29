@@ -6,7 +6,7 @@ const UserSchema = new mongoose.Schema({
   address: { type: String },
   isAdmin: { type: Boolean, default: false },
   email: { type: String, required: true },
-  googleId: { type: String }
+  googleId: { type: String },
 });
 
 const User = mongoose.model('User', UserSchema);

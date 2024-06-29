@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ResponsiveNavbar from '../responsiveNavBar';
 
 const ReportingHistory = () => {
   const [reports, setReports] = useState([]);
@@ -14,6 +15,8 @@ const ReportingHistory = () => {
   }, []);
 
   return (
+   <>
+    <ResponsiveNavbar />
     <div className="reporting-history">
       <h2>Reporting History</h2>
       <ul>
@@ -24,6 +27,7 @@ const ReportingHistory = () => {
         ))}
       </ul>
     </div>
+   </>
   );
 };
 
